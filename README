@@ -1,4 +1,3 @@
- HOW TO USE
  1) Install: pip install -U discord.py aiosqlite python-dotenv
  2) Create a bot in the Discord Developer Portal. Invite with scopes: bot, applications.commands.
  3) In Bot settings, enable Intents: Message Content, Server Members, Guilds.
@@ -33,3 +32,5 @@ POST TESTING NOTE 1: **DO NOT** SET A CHANNEL TO PRIVATE/READ-ONLY FOR THE BOT.
 POST TESTING NOTE 2: IF YOU SET A CHANNEL, IT'LL NOT RESPOND TO COMMANDS OUTSIDE IT. NOT CHANGEABLE LATER.
 
 Prim's Personal Note: It works. Yes. I am surprised too. Please don't break it. :D
+
+Please note, if you want to use this, or adapt code from here, please accredit a link to this github repo in some prominent way :)
