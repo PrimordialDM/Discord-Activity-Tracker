@@ -1,39 +1,3 @@
-# HOW TO USE
-# 1) Install: pip install -U discord.py aiosqlite python-dotenv
-# 2) Create a bot in the Discord Developer Portal. Invite with scopes: bot, applications.commands.
-# 3) In Bot settings, enable Intents: Message Content, Server Members, Guilds.
-# 4) Create .env with:
-#    DISCORD_TOKEN=your_bot_token
-#    GUILD_ID=optional_single_guild_id_for_fast_sync
-#    REPORTER_ROLE_ID=optional_bootstrap_reporter_role_id
-#    REPORTER_ROLE_NAME=optional_bootstrap_reporter_role_name
-#    ALLOWED_ROLE_IDS=optional_comma_separated_role_ids
-#    ALLOWED_ROLE_NAMES=optional_comma_separated_role_names
-# 5) Pray to the machine spirit that the bot works.
-# 6) Configure per server:
-#    /activity setchannel #channel
-#    /activity set_reporter_role @Reporters
-#    /activity allow_role_add @Mods
-# 7) Reporting (only reporter role):
-#    /activity report user:@User operation:"Operation Name" active_participant:true|false
-#    /activity report_bulk lines:"<id-or-mention> - Operation - Yes/No\n<id-or-mention> - Operation - Yes/No"
-#    Or paste lines in the configured channel
-# 8) Query and admin:
-#    /activity leaderboard period:all|30d|7d|1d limit:N
-#    /activity inactive days:N
-#    /activity user user:@User
-#    /activity export period:all|30d|7d|1d
-#    /activity delete_entry message_id line_no
-#    /activity delete_entries message_id start_line end_line
-#    /activity delete_user user:@User
-#    /activity purge_all confirm:true
-#    /activity reindex
-
-#   POST TESTING NOTE 1: **DO NOT** SET A CHANNEL TO PRIVATE/READ-ONLY FOR THE BOT.
-#   POST TESTING NOTE 2: IF YOU SET A CHANNEL, IT'LL NOT RESPOND TO COMMANDS OUTSIDE IT. NOT CHANGEABLE LATER.
-
-#   Prim's Personal Note: It works. Yes. I am surprised too. Please don't break it. :D
-
 from __future__ import annotations
 import asyncio
 import csv
@@ -908,4 +872,5 @@ def main():
     bot.run(DISCORD_TOKEN)
 
 if __name__ == "__main__":
+
     main()
